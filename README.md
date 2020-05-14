@@ -7,7 +7,7 @@ You're struggling to find similar-sounded words to go with "עוֹד חוֹזֵ�
 Using Mitzlol, you'd find a nice match for "חז" (two of the consonances in חוֹזֵר): "**זָ**נַ**ח**"!  
 Satisfied, you complete your first virtuosic line: "עוֹד חוֹזֵר הַנִּגּוּן שֶׁזָּנַחְתָּ לַשָּׁוְא".  
 
- ![enter image description here](demo/demo.gif)
+ ![demo](demo/demo.gif)
 
 # :wrench: Installation
 ## 1. Prerequisitis 
