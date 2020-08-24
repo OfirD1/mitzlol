@@ -8,7 +8,7 @@ const dbTarget = parseArgs(fs.readFileSync('mitzlolDbTarget.config', 'utf8').spl
 wordRepo.createConnection({
   client: 'mysql',
   connection: {
-    host: dbConfig.host,
+    host: dbConfig.hostname,
     user: dbConfig.username,
     password: dbConfig.password,
     database: dbConfig.database

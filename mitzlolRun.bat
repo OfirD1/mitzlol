@@ -4,14 +4,14 @@ set startPath=%cd%
 
 REM cmd handles '=' as an argument separator, 
 REM hence each passed-in argument's position is needed to be specified
-set host=%1
-set username=%3
-set password=%5
-set dbname=%7
+set hostname=%2
+set username=%4
+set password=%6
+set dbname=%8
 set client=%9
 
 set missingCredentials=false
-if "%host%" == "" set missingCredentials=true
+if "%hostname%" == "" set missingCredentials=true
 if "%username%" == "" set missingCredentials=true
 if "%password%" == "" set missingCredentials=true
 
@@ -67,8 +67,11 @@ if not exist node_modules (
 )
 REM run the client
 echo Firing up the client...
-start cmd.exe /k  "npm run serve"
+set command=""
+if "%client%" == "vue" set command="npm run serve"
+if "%client%" == "react" set command="npm start"
+start cmd.exe /k %command% 
 
-REM go back to Desktop, open the browser
+REM go back to %startPath%, open the browser
 cd %startPath%
 start http://localhost:8080
