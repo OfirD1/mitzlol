@@ -1,0 +1,17 @@
+.card-header,
+.card-body,
+.card-text {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.card-header {
+  text-align: center;
+}
+.card-body .card-text {
+  text-align: right;
+}
+.card-body {
+  width: 100%;
+}
+.word-grouping {
+  margin-bottom: 10px;
+}

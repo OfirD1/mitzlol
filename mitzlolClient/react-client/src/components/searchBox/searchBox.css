@@ -1,0 +1,15 @@
+.search-box-container {
+  padding-top: 100px;
+}
+.logo {
+  font-family: Narkisim;
+  font-size: 100px;
+  color: #b353b5;
+}
+.search-box {
+  direction: rtl;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-bottom: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+}

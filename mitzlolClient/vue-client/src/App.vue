@@ -1,10 +1,10 @@
 <template>
-    <div id="app" class="h-100 container-fluid">
-        <searchBox />
-        <spinner />
-        <wordGrouping />
-        <backToTop />
-    </div>
+  <div id="app" class="h-100 container-fluid">
+    <searchBox />
+    <spinner />
+    <wordGrouping />
+    <backToTop />
+  </div>
 </template>
 
 <script>
@@ -19,8 +19,8 @@ export default {
     searchBox,
     backToTop,
     spinner,
-    wordGrouping
-  }
+    wordGrouping,
+  },
 };
 </script>
 
@@ -29,12 +29,5 @@ export default {
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   direction: rtl;
-}
-html {
-  overflow-y: scroll;
-}
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
 }
 </style>
