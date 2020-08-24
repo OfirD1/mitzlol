@@ -25,7 +25,7 @@ export default {
     },
     visibleoffset: {
       type: [String, Number],
-      default: 100,
+      default: 200,
     },
     right: {
       type: String,
