@@ -14,7 +14,7 @@ Satisfied, you complete your first virtuosic line: "עוֹד חוֹזֵר הַנ
 Mitzlol uses Node.js with Express.js on server side, and Vue.js on client side.
 1. Install [Node.js](https://nodejs.org/en/).
 2. Install [Express.js](https://expressjs.com/): `npm install -g express`.
-3. Install [Vue CLI](https://cli.vuejs.org/guide/installation.html): `npm install -g @vue/cli`
+3. Optional: If you'd like to use Vue.js as the client, install [Vue CLI](https://cli.vuejs.org/guide/installation.html): `npm install -g @vue/cli`
 
 ## 2. `mitzlol` folder
 Download or clone `mitzlol` repository.
@@ -82,11 +82,17 @@ What you'd need is:
 # :rocket: Run
 *The following assumes `mitzlol` is the current working directory.*
 
-Run `mitzlolRun.bat` as administrator using the following command, replacing the quoted strings with your MySql credentials:
+Run `mitzlolRun.bat` as administrator using the following command:
     
-    mitzlolRun.bat --host=your_mysql_host --username=mysql_username --password=mysql_password --database=your_database_name 
+    mitzlolRun.bat --hostname=<mysql_host> --username=<mysql_username> --password=<mysql_password> --database=<database_name> <vue|react>
 
-If you're running locally, `host` is `127.0.0.1` and `user` is probably `root`.
+Such that:
+  * `<mysql_host>` – Replace it with your MySql hostname (if you're running locally, it's `127.0.0.1`). 
+  * `<mysql_username>` - Replace it with your MySql username (if you're running locally, it's probably `root`). 
+  * `<mysql_password>` - Replace it with your MySql password.
+  * `<database_name>` - Replace it with your MySql's lexicon database name.
+  * `<vue|react>` - Choose either `vue` or `react` to use as the client.
+
 
 # :link: Similar apps
 Hebrew:
