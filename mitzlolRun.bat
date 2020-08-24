@@ -1,11 +1,33 @@
 @echo off
 setlocal enableDelayedExpansion
 set startPath=%cd%
-set credentials=%1
-if "%credentials%" == "" (
-    echo Please pass the credentials for MySql
+
+REM cmd handles '=' as an argument separator, 
+REM hence each passed-in argument's position is needed to be specified
+set host=%1
+set username=%3
+set password=%5
+set dbname=%7
+set client=%9
+
+set missingCredentials=false
+if "%host%" == "" set missingCredentials=true
+if "%username%" == "" set missingCredentials=true
+if "%password%" == "" set missingCredentials=true
+
+if %missingCredentials% == true (
+    echo Please pass credentials for MySql
     goto :EOF
 )
+if "%dbname%" == "" (
+    echo Please pass the database name
+    goto :EOF
+)
+if "%client%" == "" (
+    echo Please pass a desired client [react or vue]
+    goto :EOF
+)
+
 
 REM start mysql80 service, if not already running
 :start_mysql80_service
@@ -37,7 +59,7 @@ set argv=%*
 start cmd.exe /k "node index.js %argv%"
 
 REM install the client, if not already installed
-cd %startPath%\mitzlolClient
+cd %startPath%\mitzlolClient\%client%-client
 if not exist node_modules (
    REM use the CALL command to return control to parent process
    echo installing client's node_modules
