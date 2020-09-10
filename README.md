@@ -3,7 +3,7 @@ Mitzlol is a search app for finding similar-sounded words in Hebrew.
 
 # Usage
 Imagine you're Nathan Alterman.  
-You're struggling to find similar-sounded words to go with "עוֹד חוֹזֵר הַנִּגּוּן".   
+You're struggling to find similar-sounding words to go with "עוֹד חוֹזֵר הַנִּגּוּן".   
 Using Mitzlol, you'd find a nice match for "חז" (two of the consonances in חוֹזֵר): "**זָ**נַ**ח**"!  
 Satisfied, you complete your first virtuosic line: "עוֹד חוֹזֵר הַנִּגּוּן שֶׁזָּנַחְתָּ לַשָּׁוְא".  
 
