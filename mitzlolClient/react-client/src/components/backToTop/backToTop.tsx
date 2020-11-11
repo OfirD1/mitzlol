@@ -3,7 +3,6 @@ import "./backToTop.css";
 
 const BackToTop = () => {
   const [isVisible, setIsVisible] = React.useState(false);
-  console.log("BackToTop");
   useEffect(() => {
     window.addEventListener("scroll", () =>
       catchScroll(isVisible, setIsVisible)
