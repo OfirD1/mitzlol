@@ -87,10 +87,10 @@ Run `mitzlolRun.bat` as administrator using the following command:
     mitzlolRun.bat --hostname=<mysql_host> --username=<mysql_username> --password=<mysql_password> --database=<database_name> <vue|react>
 
 Such that:
-  * `<mysql_host>` – Replace it with your MySql hostname (if you're running locally, it's `127.0.0.1`). 
-  * `<mysql_username>` - Replace it with your MySql username (if you're running locally, it's probably `root`). 
-  * `<mysql_password>` - Replace it with your MySql password.
-  * `<database_name>` - Replace it with your MySql's lexicon database name.
+  * `<mysql_host>` – Replace with your MySql hostname (if you're running locally, it's `127.0.0.1`). 
+  * `<mysql_username>` - Replace with your MySql username (if you're running locally, it's probably `root`). 
+  * `<mysql_password>` - Replace with your MySql password.
+  * `<database_name>` - Replace with your MySql's lexicon database name.
   * `<vue|react>` - Choose either `vue` or `react` to use as the client.
 
 
